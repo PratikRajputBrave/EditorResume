@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Rajput - Video Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Pratik Rajput</h1>
+            <ul class="nav-links">
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#objective">Objective</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <img src="https://i.postimg.cc/QMrXQGKZ/picofme-2.png" alt="Pratik Rajput" class="profile-pic">
+            <h1>Pratik Bhuresing Rajput</h1>
+            <p class="tagline">Creative Video Editor | DaVinci Resolve Expert</p>
+            <br>
+            
+            <!-- Buttons -->
+            <div class="hero-buttons">
+                <a href="resume.pdf" class="btn">Download Resume</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="social-links">
+                <a href="https://www.behance.net/yourusername" target="_blank" title="Behance"><i class="fab fa-behance"></i></a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@yourusername" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Summary -->
+    <section id="summary" class="summary container section">
+        <h2>Professional Summary</h2>
+        <p>Creative and detail-oriented <strong>Video Editor</strong> with expertise in 
+           <strong>DaVinci Resolve</strong> and <strong>Fusion</strong>. 
+           Skilled in color grading, motion graphics, storytelling, and graphic design, 
+           with a passion for producing visually compelling videos.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills container section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fas fa-video"></i> DaVinci Resolve</div>
+            <div class="skill-card"><i class="fas fa-adjust"></i> Color Grading</div>
+            <div class="skill-card"><i class="fas fa-magic"></i> Visual Effects</div>
+            <div class="skill-card"><i class="fas fa-paint-brush"></i> Graphic Design</div>
+            <div class="skill-card"><i class="fas fa-music"></i> Audio Editing</div>
+            <div class="skill-card"><i class="fab fa-youtube"></i> Social Media Content</div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience container section">
+        <h2>Freelance Experience</h2>
+        <div class="card">
+            <h3>Freelance Video Editor</h3>
+            <p>Thane, Maharashtra (Present)</p>
+            <ul>
+                <li>Worked with multiple clients delivering high-quality edited videos.</li>
+                <li>Edited promotional content, reels, and corporate videos using DaVinci Resolve.</li>
+                <li>Created professional color grading and visual effects with Fusion.</li>
+                <li>Designed graphic elements for improved visual appeal and branding.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="education container section">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>Bachelor of Science (BSc) – Computer Science</h3>
+            <p>Model College – Dombivali, Maharashtra, India</p>
+        </div>
+    </section>
+
+    <!-- Objective -->
+    <section id="objective" class="objective container section">
+        <h2>Career Objective</h2>
+        <p>To secure a challenging role as a <strong>Video Editor</strong> where I can 
+           use my expertise in DaVinci Resolve, Fusion, and graphic design to create 
+           impactful, high-quality video content for brands, filmmakers, and digital platforms.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pratik Bhuresing Rajput. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.behance.net/yourusername" target="_blank"><i class="fab fa-behance"></i></a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@yourusername" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
